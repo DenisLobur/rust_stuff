@@ -38,6 +38,11 @@ enum Disksize {
     TB(u32),
 }
 
+enum Shape {
+    Circle(f64),
+    Square(f64),
+}
+
 fn main() {
     let file = File::open("not_existing_file.txt");
     match file {
@@ -53,7 +58,7 @@ fn main() {
         },
     };
 
-    let mut aPerson = Person {
+    let mut a_person = Person {
         first_name: "John".to_string(),
         last_name: "Doe".to_string(),
         age: 25,
@@ -61,12 +66,12 @@ fn main() {
 
     println!(
         "Person's first name is {} and their age is {}",
-        aPerson.first_name, aPerson.age
+        a_person.first_name, a_person.age
     );
-    aPerson.set_age(30);
+    a_person.set_age(30);
     println!(
         "Person's first name is {} and their age is {}",
-        aPerson.first_name, aPerson.age
+        a_person.first_name, a_person.age
     );
 
     let point = Point(10, 20, 30);
@@ -76,6 +81,7 @@ fn main() {
 
     let sentence = "The quick brown fox jumps over the lazy dog.";
     let description = format!("The short story of:\n {}", sentence);
+    println!("{}", description);
 
     // iterate ofer the characters of the string
     for c in sentence.chars() {
@@ -110,5 +116,18 @@ fn main() {
     }
 
     let disk_size = Disksize::TB(1);
-    print!("Disk size: {:?}", disk_size);
+    println!("Disk size: {:?}", disk_size);
+
+    // enums + vectors + map fun
+    let shapes = vec![Shape::Circle(10.0), Shape::Square(20.0)];
+
+    let total_area: f64 = shapes
+        .iter()
+        .map(|shape| match shape {
+            Shape::Circle(radius) => std::f64::consts::PI * radius * radius,
+            Shape::Square(side) => side * side,
+        })
+        .sum();
+
+    println!("Total area: {}", total_area);
 }
