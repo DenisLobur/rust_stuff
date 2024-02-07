@@ -3,6 +3,10 @@ use std::{
     io::{BufRead, BufReader},
 };
 
+use crate::test_file::access_me;
+
+pub mod test_file;
+
 #[derive(Debug)]
 struct Person {
     first_name: String,
@@ -130,4 +134,6 @@ fn main() {
         .sum();
 
     println!("Total area: {}", total_area);
+
+    access_me();
 }
