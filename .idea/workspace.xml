@@ -7,13 +7,15 @@
     <cargoProject FILE="$PROJECT_DIR$/actix-gcd/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/hello/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/mandelbrot/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/coursera/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="from RustRover">
-      <change afterPath="$PROJECT_DIR$/coursera/src/test_file.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="from RustRover again 2">
+      <change afterPath="$PROJECT_DIR$/mandelbrot/mandel.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coursera/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/coursera/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mandelbrot/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/mandelbrot/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mandelbrot/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/mandelbrot/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mandelbrot/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/mandelbrot/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +60,10 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Cargo.Run hello.executor": "Run",
+    "Cargo.Run mandelbrot.executor": "Run",
     "Cargo.Run.executor": "Run",
     "Cargo.Test test_gcd.executor": "Run",
+    "Cargo.Test test_parse_pair.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -76,10 +80,27 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Cargo.Test test_gcd">
+  <component name="RunManager" selected="Cargo.Run mandelbrot">
     <configuration name="Run hello" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="run --package hello --bin hello" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$/hello" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run mandelbrot" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package mandelbrot --bin mandelbrot" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/mandelbrot" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -128,13 +149,34 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test test_parse_pair" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package mandelbrot --bin mandelbrot test_parse_pair -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/mandelbrot" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Cargo.Run" />
+      <item itemvalue="Cargo.Run mandelbrot" />
+      <item itemvalue="Cargo.Test test_parse_pair" />
       <item itemvalue="Cargo.Run hello" />
       <item itemvalue="Cargo.Test test_gcd" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Run mandelbrot" />
+        <item itemvalue="Cargo.Test test_parse_pair" />
         <item itemvalue="Cargo.Test test_gcd" />
         <item itemvalue="Cargo.Run hello" />
       </list>
@@ -160,7 +202,7 @@
       <workItem from="1706204811579" duration="103000" />
       <workItem from="1706289027612" duration="312000" />
       <workItem from="1707308742660" duration="39000" />
-      <workItem from="1707308793549" duration="981000" />
+      <workItem from="1707308793549" duration="5184000" />
     </task>
     <task id="LOCAL-00001" summary="Add three projects">
       <option name="closed" value="true" />
@@ -218,7 +260,23 @@
       <option name="project" value="LOCAL" />
       <updated>1706193877335</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="from RustRover again">
+      <option name="closed" value="true" />
+      <created>1707310069748</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707310069748</updated>
+    </task>
+    <task id="LOCAL-00009" summary="from RustRover again 2">
+      <option name="closed" value="true" />
+      <created>1707310102121</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1707310102121</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +305,8 @@
     <MESSAGE value="test 3" />
     <MESSAGE value="Adding copilot checks" />
     <MESSAGE value="from RustRover" />
-    <option name="LAST_COMMIT_MESSAGE" value="from RustRover" />
+    <MESSAGE value="from RustRover again" />
+    <MESSAGE value="from RustRover again 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="from RustRover again 2" />
   </component>
 </project>
