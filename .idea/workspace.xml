@@ -9,41 +9,26 @@
     <cargoProject FILE="$PROJECT_DIR$/mandelbrot/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/coursera/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/quickreplace/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/guess-game/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Add parallel mandelbrot">
-      <change afterPath="$PROJECT_DIR$/quickreplace/Cargo.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/Copy.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/src/main.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/.rustc_info.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/CACHEDIR.TAG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/.cargo-lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/.fingerprint/quickreplace-46e2fa350a12851b/bin-quickreplace" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/.fingerprint/quickreplace-46e2fa350a12851b/bin-quickreplace.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/.fingerprint/quickreplace-46e2fa350a12851b/dep-bin-quickreplace" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/.fingerprint/quickreplace-46e2fa350a12851b/invoked.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/build/windows_x86_64_msvc-c03c5769482c3971/invoked.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/build/windows_x86_64_msvc-c03c5769482c3971/output" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/build/windows_x86_64_msvc-c03c5769482c3971/root-output" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/build/windows_x86_64_msvc-c03c5769482c3971/stderr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/deps/quickreplace.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/deps/quickreplace.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/deps/quickreplace.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/incremental/quickreplace-1hzajiqg5yow5/s-gt6xm4h4lo-121vb05-djicdku4biw69803eu9dl5l0u/36attdzqb7wz7evd.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/incremental/quickreplace-1hzajiqg5yow5/s-gt6xm4h4lo-121vb05-djicdku4biw69803eu9dl5l0u/376vwfrppxqnamr0.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/incremental/quickreplace-1hzajiqg5yow5/s-gt6xm4h4lo-121vb05-djicdku4biw69803eu9dl5l0u/4f3wuhrhw4c5hcpg.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/incremental/quickreplace-1hzajiqg5yow5/s-gt6xm4h4lo-121vb05-djicdku4biw69803eu9dl5l0u/4r809f9tpahdzavf.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/incremental/quickreplace-1hzajiqg5yow5/s-gt6xm4h4lo-121vb05-djicdku4biw69803eu9dl5l0u/89ljvqyr02ocy91.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/incremental/quickreplace-1hzajiqg5yow5/s-gt6xm4h4lo-121vb05-djicdku4biw69803eu9dl5l0u/ab4u2vztolrlqt4.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/incremental/quickreplace-1hzajiqg5yow5/s-gt6xm4h4lo-121vb05-djicdku4biw69803eu9dl5l0u/dep-graph.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/incremental/quickreplace-1hzajiqg5yow5/s-gt6xm4h4lo-121vb05-djicdku4biw69803eu9dl5l0u/query-cache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/incremental/quickreplace-1hzajiqg5yow5/s-gt6xm4h4lo-121vb05-djicdku4biw69803eu9dl5l0u/work-products.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/incremental/quickreplace-1hzajiqg5yow5/s-gt6xm4h4lo-121vb05.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/quickreplace.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/quickreplace.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/target/debug/quickreplace.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quickreplace/test.txt" afterDir="false" />
+    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Add quickreplace module">
+      <change afterPath="$PROJECT_DIR$/guess-game/Cargo.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guess-game/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guess-game/src/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guess-game/target/.rustc_info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guess-game/target/CACHEDIR.TAG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/.cargo-lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/.fingerprint/guess-game-ae0148ad42f769f5/bin-guess-game" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/.fingerprint/guess-game-ae0148ad42f769f5/bin-guess-game.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/.fingerprint/guess-game-ae0148ad42f769f5/dep-bin-guess-game" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/.fingerprint/guess-game-ae0148ad42f769f5/invoked.timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/deps/guess_game.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/deps/guess_game.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/deps/guess_game.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/guess-game.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/guess-game.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/guess_game.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/rustProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rustProjects.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -90,6 +75,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Cargo.Run guess-game.executor": "Run",
     "Cargo.Run hello.executor": "Run",
     "Cargo.Run mandelbrot.executor": "Run",
     "Cargo.Run quickreplace.executor": "Run",
@@ -100,7 +86,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/denis/Projects/rustProjects/mandelbrot/Cargo.toml",
+    "last_opened_file_path": "C:/Users/denis/Projects/rustProjects/guess-game/Cargo.toml",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -112,10 +98,10 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Cargo.Run quickreplace">
-    <configuration name="Run hello" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package hello --bin hello" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/hello" />
+  <component name="RunManager" selected="Cargo.Run guess-game">
+    <configuration name="Run guess-game" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package guess-game --bin guess-game" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/guess-game" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -217,19 +203,19 @@
     </configuration>
     <list>
       <item itemvalue="Cargo.Run" />
+      <item itemvalue="Cargo.Run guess-game" />
       <item itemvalue="Cargo.Run mandelbrot" />
       <item itemvalue="Cargo.Run quickreplace" />
       <item itemvalue="Cargo.Test test_parse_pair" />
-      <item itemvalue="Cargo.Run hello" />
       <item itemvalue="Cargo.Test test_gcd" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Run guess-game" />
         <item itemvalue="Cargo.Run quickreplace" />
         <item itemvalue="Cargo.Run mandelbrot" />
         <item itemvalue="Cargo.Test test_parse_pair" />
         <item itemvalue="Cargo.Test test_gcd" />
-        <item itemvalue="Cargo.Run hello" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +239,8 @@
       <workItem from="1706204811579" duration="103000" />
       <workItem from="1706289027612" duration="312000" />
       <workItem from="1707308742660" duration="39000" />
-      <workItem from="1707308793549" duration="9038000" />
+      <workItem from="1707308793549" duration="9248000" />
+      <workItem from="1707840143289" duration="1363000" />
     </task>
     <task id="LOCAL-00001" summary="Add three projects">
       <option name="closed" value="true" />
@@ -335,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707314802154</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add quickreplace module">
+      <option name="closed" value="true" />
+      <created>1707328827040</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1707328827040</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,6 +362,7 @@
     <MESSAGE value="from RustRover again" />
     <MESSAGE value="from RustRover again 2" />
     <MESSAGE value="Add parallel mandelbrot" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add parallel mandelbrot" />
+    <MESSAGE value="Add quickreplace module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add quickreplace module" />
   </component>
 </project>
