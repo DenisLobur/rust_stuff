@@ -1,0 +1,92 @@
+fn main() {
+    let user1 = User {
+        username: "user1",
+        email: String::from("someone"),
+        sign_in_count: 0,
+        active: false,
+    };
+
+    let user2 = User {
+        username: "user2",
+        ..user1
+    };
+
+    let color1 = Color(10, 20, 30);
+
+    let any_struct = AnyStruct;
+
+    println!("user1 name: {}", user1.username);
+    println!("user2 name: {}", user2.username);
+    println!("color1: {}, {}, {}", color1.0, color1.1, color1.2);
+
+    let width = 30;
+    let height = 20;
+
+    let rect = Rectangle {
+        width,
+        height,
+    };
+
+    let rect2 = Rectangle {
+        width: 10,
+        height: 40,
+    };
+
+    println!("Area is equal: {}", area(width, height));
+    println!("Area2 is equal: {}", area2((width, height)));
+    println!("Area3 is equal: {}", area3(&rect));
+
+    println!("Rect1 equals {:#?}", rect);
+    println!("Area by method: {}", rect.area());
+
+    println!("Can rect hold rect1? {}", rect.can_hold(&rect2));
+
+    let sc = Rectangle::square(10);
+    println!("Square: {:#?}", sc);
+}
+
+struct User<'a> {
+    username: &'a str,
+    email: String,
+    sign_in_count: u64,
+    active: bool,
+}
+
+struct Color(i32, i32, i32);
+
+struct AnyStruct;
+
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
+impl Rectangle {
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
+
+    fn can_hold(&self, other: &Rectangle) -> bool {
+        self.width > other.width && self.height > other.height
+    }
+
+    fn square(size: u32) -> Self {
+        Self {
+            width: size,
+            height: size,
+        }
+    }
+}
+
+fn area(width: u32, height: u32) -> u32 {
+    width * height
+}
+
+fn area2(dimensions: (u32, u32)) -> u32 {
+    dimensions.0 * dimensions.1
+}
+
+fn area3(rectangle: &Rectangle) -> u32 {
+    rectangle.width * rectangle.height
+}
