@@ -1,3 +1,7 @@
+mod pattern_match;
+
+use pattern_match::*;
+
 fn main() {
     let user1 = User {
         username: "user1",
@@ -43,6 +47,19 @@ fn main() {
 
     let sc = Rectangle::square(10);
     println!("Square: {:#?}", sc);
+
+    let penny = Coin::Penny;
+    let nickel = Coin::Nickel;
+    let quarter = Coin::Quarter(UsState::Alabama);
+
+    println!("Penny value: {:?}", value_in_cents(penny));
+    println!("Nickel value: {:?}", value_in_cents(nickel));
+    println!("Quarter value: {:?}", value_in_cents(quarter));
+
+    let config_max = Some(3u8);
+    if let Some(max) = config_max {
+        println!("The maximum is configured to be {}", max);
+    }
 }
 
 struct User<'a> {
