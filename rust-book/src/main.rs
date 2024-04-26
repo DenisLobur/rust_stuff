@@ -1,6 +1,12 @@
 mod pattern_match;
+mod collections;
+mod strings;
+mod hashmaps;
 
 use pattern_match::*;
+use crate::collections::give_me_vector;
+use crate::hashmaps::{check_hash_map, company_and_people, median_and_mode, pig_latin};
+use crate::strings::using_strings;
 
 fn main() {
     let user1 = User {
@@ -60,6 +66,21 @@ fn main() {
     if let Some(max) = config_max {
         println!("The maximum is configured to be {}", max);
     }
+
+    // give_me_vector();
+
+    // using_strings();
+    // check_hash_map();
+    let mut numbers = vec![1, 2, 2, 3, 4, 4, 4, 5];
+    let (median, mode) = median_and_mode(&mut numbers);
+    println!("{median}, {mode}");
+
+    let words = vec!["first", "apple"];
+    for word in words {
+        println!("{} -> {}", word, pig_latin(word));
+    }
+
+    company_and_people();
 }
 
 struct User<'a> {
