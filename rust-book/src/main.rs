@@ -2,6 +2,7 @@ mod pattern_match;
 mod collections;
 mod strings;
 mod hashmaps;
+mod errors;
 
 use pattern_match::*;
 use crate::collections::give_me_vector;
