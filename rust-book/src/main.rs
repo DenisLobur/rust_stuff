@@ -3,9 +3,12 @@ mod collections;
 mod strings;
 mod hashmaps;
 mod errors;
+mod generics;
 
+use std::process::ExitCode;
 use pattern_match::*;
 use crate::collections::give_me_vector;
+use crate::generics::Point;
 use crate::hashmaps::{check_hash_map, company_and_people, median_and_mode, pig_latin};
 use crate::strings::using_strings;
 
@@ -82,6 +85,16 @@ fn main() {
     }
 
     company_and_people();
+
+    generics::find_biggest_number();
+    let list = vec!['a', 'f', 'b'];
+    let result = generics::biggest_generic(&list);
+    println!("Biggest char {}", result);
+
+    let integer_point = Point { x: 5.0, y: 10 };
+    let float_point = Point { x: 1, y: 5.6 };
+    println!("Point.x = {}", float_point.x());
+    println!("Point.y = {}", float_point.y());
 }
 
 struct User<'a> {
