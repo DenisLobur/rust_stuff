@@ -4,6 +4,7 @@ mod strings;
 mod hashmaps;
 mod errors;
 mod generics;
+mod lifetimes;
 
 use std::process::ExitCode;
 use pattern_match::*;
@@ -84,7 +85,7 @@ fn main() {
         println!("{} -> {}", word, pig_latin(word));
     }
 
-    company_and_people();
+    //company_and_people();
 
     generics::find_biggest_number();
     let list = vec!['a', 'f', 'b'];
@@ -95,6 +96,12 @@ fn main() {
     let float_point = Point { x: 1, y: 5.6 };
     println!("Point.x = {}", float_point.x());
     println!("Point.y = {}", float_point.y());
+
+    let string1 = String::from("abcd");
+    let string2 = "xyz";
+
+    println!("longest string {}", lifetimes::longest(string1.as_str(), string2));
+    println!("longest string 2: {}", lifetimes::longest_with_an_announcement(string1.as_str(), string2, "{}"));
 }
 
 struct User<'a> {
