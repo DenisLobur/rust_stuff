@@ -12,4 +12,10 @@
 /mandelbrot/target
 /quickreplace/target
 /guess-game/target
-
+/adder/target
+/bank/target
+/udemy/target
+/minigrep/target
+.idea/*
+/exercism/target
+/dungeoncrawl/target
