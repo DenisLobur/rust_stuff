@@ -34,3 +34,4 @@ rust_servers/ezytutors/target/*
 rust_servers/ezytutors/.idea/*
 rust_servers/scenario1/.idea/*
 rust_servers/scenario1/target/*
+lifetimes/target/*
