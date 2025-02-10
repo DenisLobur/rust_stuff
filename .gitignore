@@ -38,3 +38,4 @@ lifetimes/target/*
 generics/target/*
 traits/target/*
 closures/target/*
+traits2/target/*
