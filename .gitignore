@@ -37,3 +37,4 @@ rust_servers/scenario1/target/*
 lifetimes/target/*
 generics/target/*
 traits/target/*
+closures/target/*
