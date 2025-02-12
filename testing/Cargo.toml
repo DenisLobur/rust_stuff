@@ -1,0 +1,13 @@
+[package]
+name = "testing"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[dev-dependencies]
+criterion = { version = "0.3", features = ["html_reports"] }
+
+[[bench]]
+name = "speed_bench"
+harness = false
