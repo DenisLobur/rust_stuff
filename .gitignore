@@ -42,3 +42,4 @@ traits2/target/*
 errors/target/*
 testing/target/*
 logging/target/*
+threads_channels/target/*
