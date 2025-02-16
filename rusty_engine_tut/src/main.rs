@@ -2,8 +2,8 @@ use rusty_engine::prelude::{bevy::utils::tracing::event, *};
 
 #[derive(Resource)]
 struct GameState {
-    // highscore: u32,
-    current_score: u32,
+    highscore: u32,
+    score: u32,
     ferris_index: i32,
     // enemy_labels: Vec<String>,
     // spawn_timer: Timer,
@@ -12,8 +12,8 @@ struct GameState {
 impl Default for GameState {
     fn default() -> Self {
         Self {
-            // highscore: 0,
-            current_score: 0,
+            highscore: 0,
+            score: 0,
             ferris_index: 0,
             // enemy_labels: Vec::new(),
             // spawn_timer: Timer::from_seconds(1.0, TimerMode::Once),
@@ -30,6 +30,12 @@ fn main() {
     player.scale = 1.0;
     player.layer = 0.0;
     player.collision = true;
+
+    let score = game.add_text("score", "Score: 0");
+    score.translation = Vec2::new(520.0, 320.0);
+
+    let highscore = game.add_text("high_score", "High Score: 0");
+    highscore.translation = Vec2::new(-520.0, 320.0);
 
     let car1 = game.add_sprite("car1", SpritePreset::RacingCarYellow);
     car1.translation = Vec2::new(300.0, 0.0);
@@ -53,8 +59,14 @@ fn game_logic(engine: &mut Engine, game_state: &mut GameState) {
                     engine.sprites.remove(&label);
                 }
             }
-            game_state.current_score += 1;
-            println!("Current Score: {}", game_state.current_score);
+            game_state.score += 1;
+            let score = engine.texts.get_mut("score").unwrap();
+            score.value = format!("Current Score: {}", game_state.score);
+            if game_state.score > game_state.highscore {
+                game_state.highscore = game_state.score;
+                let high_score = engine.texts.get_mut("high_score").unwrap();
+                high_score.value = format!("High Score: {}", game_state.highscore);
+            }
         }
     }
 
@@ -95,5 +107,12 @@ fn game_logic(engine: &mut Engine, game_state: &mut GameState) {
             ferris.translation = mouse_location;
             ferris.collision = true;
         }
+    }
+
+    //reset score
+    if engine.keyboard_state.just_pressed(KeyCode::R) {
+        game_state.score = 0;
+        let score = engine.texts.get_mut("score").unwrap();
+        score.value = "Score: 0".to_string();
     }
 }
