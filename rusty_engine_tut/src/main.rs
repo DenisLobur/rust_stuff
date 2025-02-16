@@ -2,19 +2,21 @@ use rusty_engine::prelude::{bevy::utils::tracing::event, *};
 
 #[derive(Resource)]
 struct GameState {
-    highscore: u32,
+    // highscore: u32,
     current_score: u32,
-    enemy_labels: Vec<String>,
-    spawn_timer: Timer,
+    ferris_index: i32,
+    // enemy_labels: Vec<String>,
+    // spawn_timer: Timer,
 }
 
 impl Default for GameState {
     fn default() -> Self {
         Self {
-            highscore: 0,
+            // highscore: 0,
             current_score: 0,
-            enemy_labels: Vec::new(),
-            spawn_timer: Timer::from_seconds(1.0, TimerMode::Once),
+            ferris_index: 0,
+            // enemy_labels: Vec::new(),
+            // spawn_timer: Timer::from_seconds(1.0, TimerMode::Once),
         }
     }
 }
@@ -55,6 +57,7 @@ fn game_logic(engine: &mut Engine, game_state: &mut GameState) {
             println!("Current Score: {}", game_state.current_score);
         }
     }
+
     // handle movement
     let player = engine.sprites.get_mut("player").unwrap();
     const MOVEMENT_SPEED: f32 = 100.0;
@@ -81,5 +84,16 @@ fn game_logic(engine: &mut Engine, game_state: &mut GameState) {
         .pressed_any(&[KeyCode::Right, KeyCode::D])
     {
         player.translation.x += MOVEMENT_SPEED * engine.delta_f32;
+    }
+
+    //handle mouse input
+    if engine.mouse_state.just_pressed(MouseButton::Left) {
+        if let Some(mouse_location) = engine.mouse_state.location() {
+            let label = format!("ferris_{}", game_state.ferris_index);
+            game_state.ferris_index += 1;
+            let ferris = engine.add_sprite(label.clone(), "sprite\\racing\\barrel_blue.png");
+            ferris.translation = mouse_location;
+            ferris.collision = true;
+        }
     }
 }
