@@ -1,0 +1,21 @@
+use rusty_engine::prelude::*;
+
+#[derive(Resource)]
+struct GameState {
+    health_amount: u8,
+    lost: bool,
+}
+
+fn main() {
+    let mut game = Game::new();
+
+    game.add_logic(game_logic);
+    game.run(GameState {
+        health_amount: 5,
+        lost: false,
+    });
+}
+
+fn game_logic(engine: &mut Engine, state: &mut GameState) {
+    println!("Game logic");
+}

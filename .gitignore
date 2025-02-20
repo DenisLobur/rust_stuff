@@ -44,3 +44,4 @@ testing/target/*
 logging/target/*
 threads_channels/target/*
 rusty_engine_tut/target/*
+road_race/target/*
