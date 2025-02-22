@@ -29,12 +29,6 @@ fn main() {
     game.audio_manager
         .play_music(MusicPreset::WhimsicalPopsicle, 0.2);
 
-    game.add_logic(game_logic);
-    game.run(GameState {
-        health_amount: 5,
-        lost: false,
-    });
-
     // Obstacles
     let obstacle_presets = vec![
         SpritePreset::RacingBarrierRed,
@@ -49,6 +43,12 @@ fn main() {
         obstacle.translation.x = thread_rng().gen_range(800.0..1600.0);
         obstacle.translation.y = thread_rng().gen_range(-300.0..300.0);
     }
+
+    game.add_logic(game_logic);
+    game.run(GameState {
+        health_amount: 5,
+        lost: false,
+    });
 }
 
 fn game_logic(engine: &mut Engine, state: &mut GameState) {
