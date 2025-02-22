@@ -1,3 +1,4 @@
+use rand::prelude::*;
 use rusty_engine::prelude::*;
 
 const PLAYER_SPEED: f32 = 250.0;
@@ -33,6 +34,21 @@ fn main() {
         health_amount: 5,
         lost: false,
     });
+
+    // Obstacles
+    let obstacle_presets = vec![
+        SpritePreset::RacingBarrierRed,
+        SpritePreset::RacingBarrelBlue,
+        SpritePreset::RacingConeStraight,
+    ];
+
+    for (i, preset) in obstacle_presets.into_iter().enumerate() {
+        let obstacle = game.add_sprite(format!("obstacle{}", i), preset);
+        obstacle.layer = 5.0;
+        obstacle.collision = true;
+        obstacle.translation.x = thread_rng().gen_range(800.0..1600.0);
+        obstacle.translation.y = thread_rng().gen_range(-300.0..300.0);
+    }
 }
 
 fn game_logic(engine: &mut Engine, state: &mut GameState) {
@@ -58,6 +74,14 @@ fn game_logic(engine: &mut Engine, state: &mut GameState) {
             sprite.translation.x -= ROAD_SPEED * engine.delta_f32;
             if sprite.translation.x < -675.0 {
                 sprite.translation.x += 1500.0;
+            }
+        }
+
+        if sprite.label.starts_with("obstacle") {
+            sprite.translation.x -= ROAD_SPEED * engine.delta_f32;
+            if sprite.translation.x < -800.0 {
+                sprite.translation.x = thread_rng().gen_range(800.0..1600.0);
+                sprite.translation.y = thread_rng().gen_range(-300.0..300.0);
             }
         }
     }
