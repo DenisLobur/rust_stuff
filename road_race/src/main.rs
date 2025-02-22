@@ -56,6 +56,10 @@ fn main() {
 }
 
 fn game_logic(engine: &mut Engine, state: &mut GameState) {
+    if state.lost {
+        return;
+    }
+
     let mut direction: f32 = 0.0;
     if engine.keyboard_state.pressed(KeyCode::Up) {
         direction += 1.0;
@@ -102,5 +106,14 @@ fn game_logic(engine: &mut Engine, state: &mut GameState) {
             health_message.value = format!("Health: {}", state.health_amount);
             engine.audio_manager.play_sfx(SfxPreset::Impact3, 0.5);
         }
+    }
+
+    if state.health_amount == 0 {
+        state.lost = true;
+        let game_over = engine.add_text("game_over", "Game Over");
+        game_over.translation = Vec2::new(-100.0, 0.0);
+        game_over.font_size = 128.0;
+        engine.audio_manager.stop_music();
+        engine.audio_manager.play_sfx(SfxPreset::Jingle3, 0.5);
     }
 }
