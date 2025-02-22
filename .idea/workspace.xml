@@ -13,93 +13,9 @@
     <cargoProject FILE="$PROJECT_DIR$/car_shoot/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Add quickreplace module">
-      <change afterPath="$PROJECT_DIR$/car_shoot/Cargo.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/music/Classy 8-Bit.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/music/Mysterious Magic.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/music/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/music/Whimsical Popsicle.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/click.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/confirmation1.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/confirmation2.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/congratulations.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/forcefield1.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/forcefield2.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/impact1.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/impact2.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/impact3.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/jingle1.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/jingle2.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/jingle3.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/minimize1.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/minimize2.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/switch1.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/switch2.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/tones1.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/tones2.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/font/FiraMono-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/font/FiraSans-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/barrel_blue.collider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/barrel_blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/barrel_red.collider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/barrel_red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/barrier_red.collider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/barrier_red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/barrier_white.collider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/barrier_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/car_black.collider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/car_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/car_blue.collider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/car_blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/car_green.collider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/car_green.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/car_red.collider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/car_red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/car_yellow.collider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/car_yellow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/cone_straight.collider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/cone_straight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/ball_blue.collider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/ball_blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/ball_blue_alt.collider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/ball_blue_alt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/ball_red.collider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/ball_red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/ball_red_alt.collider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/ball_red_alt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/block_corner.collider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/block_corner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/block_narrow.collider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/block_narrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/block_small.collider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/block_small.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/block_square.collider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/block_square.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/hole_end.collider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/hole_end.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/hole_start.collider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/hole_start.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/src/main.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/target/.rustc_info.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/target/CACHEDIR.TAG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/.cargo-lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/.fingerprint/car_shoot-532c5bf4430f1819/bin-car_shoot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/.fingerprint/car_shoot-532c5bf4430f1819/bin-car_shoot.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/.fingerprint/car_shoot-532c5bf4430f1819/dep-bin-car_shoot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/.fingerprint/car_shoot-532c5bf4430f1819/invoked.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/car_shoot.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/car_shoot.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/car_shoot.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/deps/car_shoot.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/deps/car_shoot.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/deps/car_shoot.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rustProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rustProjects.iml" afterDir="false" />
+    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Start working on car shoot project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car_shoot/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/car_shoot/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +80,7 @@
     "nodejs_package_manager_path": "npm",
     "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
     "org.rust.hideNoCargoProjectNotificationsC:/Users/denis/Projects/rustProjects/coursera/src/main.rs": "true",
-    "settings.editor.selected.configurable": "language.rust.rustfmt",
+    "settings.editor.selected.configurable": "language.rust.cargo.check",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -172,6 +88,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\denis\Projects\rustProjects\car_shoot" />
     </key>
+  </component>
+  <component name="RsExternalLinterProjectSettings">
+    <option name="runOnTheFly" value="true" />
   </component>
   <component name="RunManager" selected="Cargo.Run car_shoot">
     <configuration name="Run car_shoot" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
@@ -316,7 +235,7 @@
       <workItem from="1707308742660" duration="39000" />
       <workItem from="1707308793549" duration="9248000" />
       <workItem from="1707840143289" duration="1363000" />
-      <workItem from="1740242913889" duration="2749000" />
+      <workItem from="1740242913889" duration="10222000" />
     </task>
     <task id="LOCAL-00001" summary="Add three projects">
       <option name="closed" value="true" />
@@ -406,7 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707328827040</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Start working on car shoot project">
+      <option name="closed" value="true" />
+      <created>1740246579439</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1740246579439</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,6 +366,7 @@
     <MESSAGE value="from RustRover again 2" />
     <MESSAGE value="Add parallel mandelbrot" />
     <MESSAGE value="Add quickreplace module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add quickreplace module" />
+    <MESSAGE value="Start working on car shoot project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start working on car shoot project" />
   </component>
 </project>
