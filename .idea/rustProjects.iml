@@ -8,12 +8,14 @@
       <sourceFolder url="file://$MODULE_DIR$/coursera/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/quickreplace/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/guess-game/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/car_shoot/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/actix-gcd/target" />
       <excludeFolder url="file://$MODULE_DIR$/hello/target" />
       <excludeFolder url="file://$MODULE_DIR$/mandelbrot/target" />
       <excludeFolder url="file://$MODULE_DIR$/coursera/target" />
       <excludeFolder url="file://$MODULE_DIR$/quickreplace/target" />
       <excludeFolder url="file://$MODULE_DIR$/guess-game/target" />
+      <excludeFolder url="file://$MODULE_DIR$/car_shoot/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -10,26 +10,94 @@
     <cargoProject FILE="$PROJECT_DIR$/coursera/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/quickreplace/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/guess-game/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/car_shoot/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Add quickreplace module">
-      <change afterPath="$PROJECT_DIR$/guess-game/Cargo.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guess-game/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guess-game/src/main.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guess-game/target/.rustc_info.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guess-game/target/CACHEDIR.TAG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/.cargo-lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/.fingerprint/guess-game-ae0148ad42f769f5/bin-guess-game" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/.fingerprint/guess-game-ae0148ad42f769f5/bin-guess-game.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/.fingerprint/guess-game-ae0148ad42f769f5/dep-bin-guess-game" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/.fingerprint/guess-game-ae0148ad42f769f5/invoked.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/deps/guess_game.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/deps/guess_game.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/deps/guess_game.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/guess-game.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/guess-game.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guess-game/target/debug/guess_game.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/Cargo.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/music/Classy 8-Bit.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/music/Mysterious Magic.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/music/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/music/Whimsical Popsicle.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/click.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/confirmation1.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/confirmation2.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/congratulations.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/forcefield1.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/forcefield2.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/impact1.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/impact2.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/impact3.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/jingle1.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/jingle2.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/jingle3.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/minimize1.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/minimize2.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/switch1.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/switch2.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/tones1.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/audio/sfx/tones2.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/font/FiraMono-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/font/FiraSans-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/barrel_blue.collider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/barrel_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/barrel_red.collider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/barrel_red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/barrier_red.collider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/barrier_red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/barrier_white.collider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/barrier_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/car_black.collider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/car_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/car_blue.collider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/car_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/car_green.collider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/car_green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/car_red.collider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/car_red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/car_yellow.collider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/car_yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/cone_straight.collider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/racing/cone_straight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/ball_blue.collider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/ball_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/ball_blue_alt.collider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/ball_blue_alt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/ball_red.collider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/ball_red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/ball_red_alt.collider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/ball_red_alt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/block_corner.collider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/block_corner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/block_narrow.collider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/block_narrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/block_small.collider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/block_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/block_square.collider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/block_square.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/hole_end.collider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/hole_end.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/hole_start.collider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/assets/sprite/rolling/hole_start.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/src/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/target/.rustc_info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/target/CACHEDIR.TAG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/.cargo-lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/.fingerprint/car_shoot-532c5bf4430f1819/bin-car_shoot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/.fingerprint/car_shoot-532c5bf4430f1819/bin-car_shoot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/.fingerprint/car_shoot-532c5bf4430f1819/dep-bin-car_shoot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/.fingerprint/car_shoot-532c5bf4430f1819/invoked.timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/car_shoot.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/car_shoot.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/car_shoot.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/deps/car_shoot.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/deps/car_shoot.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_shoot/target/release/deps/car_shoot.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/rustProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rustProjects.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -38,6 +106,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:dev" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -47,14 +116,12 @@
     &quot;assignee&quot;: &quot;DenisLobur&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="403d8f11-d692-4e05-bf42-29da185109de" />
-        <option name="url" value="https://github.com/DenisLobur/rust_stuff.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/DenisLobur/rust_stuff.git",
+    "accountId": "403d8f11-d692-4e05-bf42-29da185109de"
+  }
+}]]></component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="l85vzkbx" />
   </component>
@@ -75,6 +142,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Cargo.Run car_shoot.executor": "Run",
     "Cargo.Run guess-game.executor": "Run",
     "Cargo.Run hello.executor": "Run",
     "Cargo.Run mandelbrot.executor": "Run",
@@ -84,9 +152,11 @@
     "Cargo.Test test_parse_pair.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.rust.reset.selective.auto.import": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/denis/Projects/rustProjects/guess-game/Cargo.toml",
+    "last_opened_file_path": "C:/Users/denis/Projects/rustProjects/car_shoot",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -94,11 +164,33 @@
     "nodejs_package_manager_path": "npm",
     "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
     "org.rust.hideNoCargoProjectNotificationsC:/Users/denis/Projects/rustProjects/coursera/src/main.rs": "true",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "language.rust.rustfmt",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Cargo.Run guess-game">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\denis\Projects\rustProjects\car_shoot" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cargo.Run car_shoot">
+    <configuration name="Run car_shoot" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package car_shoot --bin car_shoot" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/car_shoot" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Run guess-game" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="run --package guess-game --bin guess-game" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$/guess-game" />
@@ -167,23 +259,6 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test test_gcd" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package hello --bin hello test_gcd -- --exact" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/hello" />
-      <envs />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test test_parse_pair" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="test --package mandelbrot --bin mandelbrot test_parse_pair -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$/mandelbrot" />
@@ -203,19 +278,19 @@
     </configuration>
     <list>
       <item itemvalue="Cargo.Run" />
+      <item itemvalue="Cargo.Run car_shoot" />
       <item itemvalue="Cargo.Run guess-game" />
       <item itemvalue="Cargo.Run mandelbrot" />
       <item itemvalue="Cargo.Run quickreplace" />
       <item itemvalue="Cargo.Test test_parse_pair" />
-      <item itemvalue="Cargo.Test test_gcd" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Run car_shoot" />
         <item itemvalue="Cargo.Run guess-game" />
         <item itemvalue="Cargo.Run quickreplace" />
         <item itemvalue="Cargo.Run mandelbrot" />
         <item itemvalue="Cargo.Test test_parse_pair" />
-        <item itemvalue="Cargo.Test test_gcd" />
       </list>
     </recent_temporary>
   </component>
@@ -241,6 +316,7 @@
       <workItem from="1707308742660" duration="39000" />
       <workItem from="1707308793549" duration="9248000" />
       <workItem from="1707840143289" duration="1363000" />
+      <workItem from="1740242913889" duration="2749000" />
     </task>
     <task id="LOCAL-00001" summary="Add three projects">
       <option name="closed" value="true" />
