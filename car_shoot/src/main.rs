@@ -31,8 +31,7 @@ fn main() {
     player.translation.y = -325.0;
     player.layer = 10.0;
 
-    let cars_left = game.add_text("cars_left", "Cars left: 25");
-    cars_left.value = format!("Cars left: {}", game_state.cars_left);
+    let cars_left = game.add_text("cars_left", format!("Cars left: {}", game_state.cars_left));
     cars_left.translation = Vec2::new(540.0, -320.0);
 
     game.audio_manager.play_music(MusicPreset::Classy8Bit, 0.1);
@@ -42,12 +41,14 @@ fn main() {
 }
 
 fn game_logic(engine: &mut Engine, game_state: &mut GameState) {
+    // Handle marble gun movement
     let player = engine.sprites.get_mut("player").unwrap();
     if let Some(location) = engine.mouse_state.location() {
         player.translation.x = location.x;
     }
     let player_x = player.translation.x;
 
+    // Shoot marbles!
     if engine.mouse_state.just_pressed(MouseButton::Left) {
         if let Some(marble) = game_state.marble_labels.pop() {
             let marble = engine.add_sprite(marble, SpritePreset::RollingBallBlue);
@@ -60,30 +61,35 @@ fn game_logic(engine: &mut Engine, game_state: &mut GameState) {
         };
     }
 
-    for sprite in engine.sprites.values_mut() {
-        if sprite.label.starts_with("marble") {
-            sprite.translation.y += MARBLE_SPEED * engine.delta_f32;
-        }
-    }
+    // Move marbles
+    engine
+        .sprites
+        .values_mut()
+        .filter(|sprite| sprite.label.starts_with("marble"))
+        .for_each(|marble| marble.translation.y += MARBLE_SPEED * engine.delta_f32);
 
-    let mut labels_to_delete: Vec<String> = vec![];
+    // Clean up sprites that have gone off the screen
+    let mut labels_to_delete = Vec::new();
     for (label, sprite) in engine.sprites.iter() {
         if sprite.translation.y > 400.0 || sprite.translation.x > 750.0 {
             labels_to_delete.push(label.clone());
         }
     }
 
-    labels_to_delete.iter().for_each(|label| {
-        engine.sprites.get_mut(label);
+    for label in labels_to_delete {
+        engine.sprites.remove(&label);
         if label.starts_with("marble") {
-            game_state.marble_labels.push(label.clone());
+            game_state.marble_labels.push(label);
         }
-    });
+    }
 
+    // Spawn cars
     if game_state.spawn_timer.tick(engine.delta).just_finished() {
+        // Reset the timer to a new value
         game_state.spawn_timer =
             Timer::from_seconds(thread_rng().gen_range(0.1..1.25), TimerMode::Once);
 
+        // Get the new car
         if game_state.cars_left > 0 {
             game_state.cars_left -= 1;
             let cars_left = engine.texts.get_mut("cars_left").unwrap();
@@ -110,12 +116,14 @@ fn game_logic(engine: &mut Engine, game_state: &mut GameState) {
         }
     }
 
-    for sprite in engine.sprites.values_mut() {
-        if sprite.label.starts_with("car") {
-            sprite.translation.x += CAR_SPEED * engine.delta_f32;
-        }
-    }
+    // Move cars
+    engine
+        .sprites
+        .values_mut()
+        .filter(|sprite| sprite.label.starts_with("car"))
+        .for_each(|car| car.translation.x += CAR_SPEED * engine.delta_f32);
 
+    // Handle collisions
     for event in engine.collision_events.drain(..) {
         if event.state.is_end() {
             continue;
@@ -124,14 +132,12 @@ fn game_logic(engine: &mut Engine, game_state: &mut GameState) {
             continue;
         }
 
-        let label = event.pair;
-        engine.sprites.remove(&label.0);
-        engine.sprites.remove(&label.1);
-
-        if let Some(marble_label) = [label.0, label.1].iter().find(|&l| l.starts_with("marble")) {
-            game_state.marble_labels.push(marble_label.clone());
+        for label in event.pair {
+            engine.sprites.remove(&label);
+            if label.starts_with("marble") {
+                game_state.marble_labels.push(label);
+            }
+            engine.audio_manager.play_sfx(SfxPreset::Confirmation1, 0.2);
         }
-
-        engine.audio_manager.play_sfx(SfxPreset::Confirmation1, 0.2);
     }
 }
