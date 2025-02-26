@@ -14,14 +14,12 @@
     <cargoProject FILE="$PROJECT_DIR$/rust_servers/ezytutors/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Refactor car shoot">
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-nodb/src/handlers.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-nodb/src/routes.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-nodb/src/state.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rustProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rustProjects.iml" afterDir="false" />
+    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Chapter 3.2.2. Define RESTful web service. Add state">
+      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-nodb/src/models.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/Cargo.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-nodb/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-nodb/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-nodb/src/bin/tutor-service.rs" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-nodb/src/bin/tutor-service.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-nodb/src/state.rs" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-nodb/src/state.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +91,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.disableDetachedFileInspectionC:/Users/denis/Projects/rustProjects/rust_servers/ezytutors/tutor-nodb/src/models.rs": "true",
     "org.rust.disableDetachedFileInspectionC:/Users/denis/Projects/rustProjects/rust_servers/ezytutors/tutor-nodb/src/state.rs": "true",
     "org.rust.hideNoCargoProjectNotificationsC:/Users/denis/Projects/rustProjects/coursera/src/main.rs": "true",
     "settings.editor.selected.configurable": "language.rust.cargo.check",
@@ -253,7 +252,7 @@
       <workItem from="1740242913889" duration="13790000" />
       <workItem from="1740337465167" duration="784000" />
       <workItem from="1740520732252" duration="254000" />
-      <workItem from="1740595565716" duration="4889000" />
+      <workItem from="1740595565716" duration="6311000" />
     </task>
     <task id="LOCAL-00001" summary="Add three projects">
       <option name="closed" value="true" />
@@ -367,7 +366,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740259419091</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Chapter 3.2.2. Define RESTful web service. Add state">
+      <option name="closed" value="true" />
+      <created>1740600640301</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1740600640301</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,6 +410,7 @@
     <MESSAGE value="Start working on car shoot project" />
     <MESSAGE value="Add game logic to car shoot" />
     <MESSAGE value="Refactor car shoot" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor car shoot" />
+    <MESSAGE value="Chapter 3.2.2. Define RESTful web service. Add state" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chapter 3.2.2. Define RESTful web service. Add state" />
   </component>
 </project>
