@@ -9,6 +9,8 @@
       <sourceFolder url="file://$MODULE_DIR$/quickreplace/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/guess-game/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/car_shoot/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rust_servers/ezytutors/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rust_servers/ezytutors/tutor-nodb/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/actix-gcd/target" />
       <excludeFolder url="file://$MODULE_DIR$/hello/target" />
       <excludeFolder url="file://$MODULE_DIR$/mandelbrot/target" />
@@ -16,6 +18,7 @@
       <excludeFolder url="file://$MODULE_DIR$/quickreplace/target" />
       <excludeFolder url="file://$MODULE_DIR$/guess-game/target" />
       <excludeFolder url="file://$MODULE_DIR$/car_shoot/target" />
+      <excludeFolder url="file://$MODULE_DIR$/rust_servers/ezytutors/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

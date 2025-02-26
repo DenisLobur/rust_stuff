@@ -1,6 +1,7 @@
 [package]
 name = "tutor-nodb"
 version = "0.1.0"
+authors = ["denys"]
 edition = "2021"
 default-run = "tutor-service"
 

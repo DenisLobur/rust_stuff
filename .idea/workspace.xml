@@ -11,11 +11,17 @@
     <cargoProject FILE="$PROJECT_DIR$/quickreplace/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/guess-game/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/car_shoot/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/rust_servers/ezytutors/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Add game logic to car shoot">
+    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Refactor car shoot">
+      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-nodb/src/handlers.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-nodb/src/routes.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-nodb/src/state.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rustProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rustProjects.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_shoot/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/car_shoot/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-nodb/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-nodb/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-nodb/src/bin/tutor-service.rs" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-nodb/src/bin/tutor-service.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +29,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:dev" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Rust File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -32,12 +45,12 @@
     &quot;assignee&quot;: &quot;DenisLobur&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/DenisLobur/rust_stuff.git",
-    "accountId": "403d8f11-d692-4e05-bf42-29da185109de"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DenisLobur/rust_stuff.git&quot;,
+    &quot;accountId&quot;: &quot;403d8f11-d692-4e05-bf42-29da185109de&quot;
   }
-}]]></component>
+}</component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="l85vzkbx" />
   </component>
@@ -70,15 +83,17 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.rust.reset.selective.auto.import": "true",
+    "devcontainer.show.open.project.notification": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/denis/Projects/rustProjects/car_shoot",
+    "last_opened_file_path": "C:/Users/denis/Projects/rust_games/bevy_tut",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.disableDetachedFileInspectionC:/Users/denis/Projects/rustProjects/rust_servers/ezytutors/tutor-nodb/src/state.rs": "true",
     "org.rust.hideNoCargoProjectNotificationsC:/Users/denis/Projects/rustProjects/coursera/src/main.rs": "true",
     "settings.editor.selected.configurable": "language.rust.cargo.check",
     "vue.rearranger.settings.migration": "true"
@@ -235,7 +250,10 @@
       <workItem from="1707308742660" duration="39000" />
       <workItem from="1707308793549" duration="9248000" />
       <workItem from="1707840143289" duration="1363000" />
-      <workItem from="1740242913889" duration="13394000" />
+      <workItem from="1740242913889" duration="13790000" />
+      <workItem from="1740337465167" duration="784000" />
+      <workItem from="1740520732252" duration="254000" />
+      <workItem from="1740595565716" duration="4889000" />
     </task>
     <task id="LOCAL-00001" summary="Add three projects">
       <option name="closed" value="true" />
@@ -341,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740255691876</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Refactor car shoot">
+      <option name="closed" value="true" />
+      <created>1740259419091</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1740259419091</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,6 +402,7 @@
     <MESSAGE value="Add quickreplace module" />
     <MESSAGE value="Start working on car shoot project" />
     <MESSAGE value="Add game logic to car shoot" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add game logic to car shoot" />
+    <MESSAGE value="Refactor car shoot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor car shoot" />
   </component>
 </project>
