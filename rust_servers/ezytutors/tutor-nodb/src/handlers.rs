@@ -48,10 +48,31 @@ pub async fn get_courses_for_tutor(
         .filter(|course| course.tutor_id == tutor_id)
         .collect::<Vec<Course>>();
 
-    if filtered_courses.len() > 0 {
+    if !filtered_courses.is_empty() {
         HttpResponse::Ok().json(filtered_courses)
     } else {
         HttpResponse::Ok().json("No courses found for tutor".to_string())
+    }
+}
+
+pub async fn get_course_detail(
+    app_state: web::Data<AppState>,
+    params: web::Path<(i32, i32)>,
+) -> HttpResponse {
+    let (tutor_id, course_id) = params.into_inner();
+    let selected_course = app_state
+        .courses
+        .lock()
+        .unwrap()
+        .clone()
+        .into_iter()
+        .find(|course| course.tutor_id == tutor_id && course.course_id == Some(course_id))
+        .ok_or("Course not found");
+
+    if let Ok(course) = selected_course {
+        HttpResponse::Ok().json(course)
+    } else {
+        HttpResponse::Ok().json("Course not found".to_string())
     }
 }
 
@@ -87,8 +108,20 @@ mod tests {
             visit_count: Mutex::new(0),
             courses: Mutex::new(vec![]),
         });
-        let tutor_id: web::Path<(i32)> = web::Path::from((1));
+        let tutor_id: web::Path<i32> = web::Path::from(1);
         let response = get_courses_for_tutor(app_state, tutor_id).await;
+        assert_eq!(response.status(), StatusCode::OK);
+    }
+
+    #[actix_rt::test]
+    async fn get_course_detail_success() {
+        let app_state: web::Data<AppState> = web::Data::new(AppState {
+            health_check_response: "".to_string(),
+            visit_count: Mutex::new(0),
+            courses: Mutex::new(vec![]),
+        });
+        let params: web::Path<(i32, i32)> = web::Path::from((1, 1));
+        let response = get_course_detail(app_state, params).await;
         assert_eq!(response.status(), StatusCode::OK);
     }
 }
