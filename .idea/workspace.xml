@@ -14,16 +14,13 @@
     <cargoProject FILE="$PROJECT_DIR$/rust_servers/ezytutors/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Chapter 3.2.6. Request course details">
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/database.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/bin/iter1.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rustProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rustProjects.iml" afterDir="false" />
+    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Chapter 4.2. Setting up database, table and making select request">
+      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/bin/iter2.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter2/handlers.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter2/models.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter2/routes.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter2/state.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/Cargo.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,7 +263,7 @@
       <workItem from="1740595565716" duration="11381000" />
       <workItem from="1740689410897" duration="4600000" />
       <workItem from="1740694069674" duration="2366000" />
-      <workItem from="1740748919702" duration="1367000" />
+      <workItem from="1740748919702" duration="4446000" />
     </task>
     <task id="LOCAL-00001" summary="Add three projects">
       <option name="closed" value="true" />
@@ -412,7 +409,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740608357662</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Chapter 4.2. Setting up database, table and making select request">
+      <option name="closed" value="true" />
+      <created>1740750448548</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1740750448548</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,6 +457,7 @@
     <MESSAGE value="Chapter 3.2.3. Define Course model" />
     <MESSAGE value="Chapter 3.2.5. Request list of courses" />
     <MESSAGE value="Chapter 3.2.6. Request course details" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chapter 3.2.6. Request course details" />
+    <MESSAGE value="Chapter 4.2. Setting up database, table and making select request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chapter 4.2. Setting up database, table and making select request" />
   </component>
 </project>
