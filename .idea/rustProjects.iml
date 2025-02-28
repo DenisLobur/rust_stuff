@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/car_shoot/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/rust_servers/ezytutors/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/rust_servers/ezytutors/tutor-nodb/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rust_servers/ezytutors/tutor-db/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/actix-gcd/target" />
       <excludeFolder url="file://$MODULE_DIR$/hello/target" />
       <excludeFolder url="file://$MODULE_DIR$/mandelbrot/target" />
