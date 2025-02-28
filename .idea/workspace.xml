@@ -14,12 +14,13 @@
     <cargoProject FILE="$PROJECT_DIR$/rust_servers/ezytutors/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Chapter 4.2. Setting up database, table and making select request">
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/bin/iter2.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter2/handlers.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter2/models.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter2/routes.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter2/state.rs" afterDir="false" />
+    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Chapter 4.3. Add routes, handlers, models, state and tests for Course">
+      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/bin/iter3.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter3/db_access.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter3/handlers.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter3/models.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter3/routes.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter3/state.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -263,7 +264,7 @@
       <workItem from="1740595565716" duration="11381000" />
       <workItem from="1740689410897" duration="4600000" />
       <workItem from="1740694069674" duration="2366000" />
-      <workItem from="1740748919702" duration="4446000" />
+      <workItem from="1740748919702" duration="7019000" />
     </task>
     <task id="LOCAL-00001" summary="Add three projects">
       <option name="closed" value="true" />
@@ -417,7 +418,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740750448548</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Chapter 4.3. Add routes, handlers, models, state and tests for Course">
+      <option name="closed" value="true" />
+      <created>1740754182638</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1740754182638</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,6 +467,7 @@
     <MESSAGE value="Chapter 3.2.5. Request list of courses" />
     <MESSAGE value="Chapter 3.2.6. Request course details" />
     <MESSAGE value="Chapter 4.2. Setting up database, table and making select request" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chapter 4.2. Setting up database, table and making select request" />
+    <MESSAGE value="Chapter 4.3. Add routes, handlers, models, state and tests for Course" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chapter 4.3. Add routes, handlers, models, state and tests for Course" />
   </component>
 </project>
