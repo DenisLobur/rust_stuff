@@ -47,9 +47,7 @@ create table ezy_course_c5 (
     course_name varchar(140) not null,
     posted_time TIMESTAMP default now()
 );
-/
-*
-Load seed data for testing * /
+/* Load seed data for testing */
 insert into
     ezy_course_c5 (
         course_id,
