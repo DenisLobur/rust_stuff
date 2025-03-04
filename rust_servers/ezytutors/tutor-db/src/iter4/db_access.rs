@@ -1,5 +1,6 @@
 use super::models::Course;
 use sqlx::postgres::PgPool;
+use super::errors::EzyTutorError;
 
 pub async fn get_courses_for_tutor_db(pool: &PgPool, tutor_id: i32) -> Vec<Course> {
     // Prepare SQL statement

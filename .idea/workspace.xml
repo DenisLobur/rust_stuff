@@ -14,14 +14,9 @@
     <cargoProject FILE="$PROJECT_DIR$/rust_servers/ezytutors/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Chapter 4.5. Add real Database interactions">
+    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Chapter 5.2. Continue working on errors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/.env" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/database.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/bin/iter4.rs" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/bin/iter4.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter3/db_access.rs" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter3/db_access.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter4/db_access.rs" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter4/db_access.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter4/handlers.rs" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter4/handlers.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter4/errors.rs" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter4/errors.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +94,7 @@
     &quot;org.rust.disableDetachedFileInspectionC:/Users/denis/Projects/rustProjects/rust_servers/ezytutors/tutor-nodb/src/models.rs&quot;: &quot;true&quot;,
     &quot;org.rust.disableDetachedFileInspectionC:/Users/denis/Projects/rustProjects/rust_servers/ezytutors/tutor-nodb/src/state.rs&quot;: &quot;true&quot;,
     &quot;org.rust.hideNoCargoProjectNotificationsC:/Users/denis/Projects/rustProjects/coursera/src/main.rs&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;language.rust.cargo.check&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -221,9 +216,9 @@
     </configuration>
     <list>
       <item itemvalue="Cargo.Run" />
-      <item itemvalue="Cargo.Run iter3" />
       <item itemvalue="Cargo.Run car_shoot" />
       <item itemvalue="Cargo.Run guess-game" />
+      <item itemvalue="Cargo.Run iter3" />
       <item itemvalue="Cargo.Run mandelbrot" />
       <item itemvalue="Cargo.Run quickreplace" />
     </list>
@@ -267,7 +262,10 @@
       <workItem from="1740694069674" duration="2366000" />
       <workItem from="1740748919702" duration="7498000" />
       <workItem from="1740997010682" duration="481000" />
-      <workItem from="1741016537978" duration="2988000" />
+      <workItem from="1741016537978" duration="3616000" />
+      <workItem from="1741096188601" duration="182000" />
+      <workItem from="1741096380846" duration="118000" />
+      <workItem from="1741126695768" duration="751000" />
     </task>
     <task id="LOCAL-00001" summary="Add three projects">
       <option name="closed" value="true" />
@@ -437,7 +435,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740757067313</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Chapter 5.2. Continue working on errors">
+      <option name="closed" value="true" />
+      <created>1741036087500</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1741036087500</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,6 +486,7 @@
     <MESSAGE value="Chapter 4.2. Setting up database, table and making select request" />
     <MESSAGE value="Chapter 4.3. Add routes, handlers, models, state and tests for Course" />
     <MESSAGE value="Chapter 4.5. Add real Database interactions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chapter 4.5. Add real Database interactions" />
+    <MESSAGE value="Chapter 5.2. Continue working on errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chapter 5.2. Continue working on errors" />
   </component>
 </project>
