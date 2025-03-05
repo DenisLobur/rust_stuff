@@ -14,10 +14,8 @@
     <cargoProject FILE="$PROJECT_DIR$/rust_servers/ezytutors/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Chapter 5.4. Add tests and convert custom errors">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Chapter 5.5. Change get_course_details to handle error. Add test">
       <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter4/db_access.rs" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter4/db_access.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter4/handlers.rs" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter4/handlers.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +270,7 @@
       <workItem from="1741126695768" duration="1048000" />
       <workItem from="1741201587934" duration="1771000" />
       <workItem from="1741203404839" duration="695000" />
-      <workItem from="1741204125672" duration="1598000" />
+      <workItem from="1741204125672" duration="1907000" />
     </task>
     <task id="LOCAL-00001" summary="Add three projects">
       <option name="closed" value="true" />
@@ -466,7 +464,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741205408762</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Chapter 5.5. Change get_course_details to handle error. Add test">
+      <option name="closed" value="true" />
+      <created>1741205967845</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1741205967845</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,6 +518,7 @@
     <MESSAGE value="Chapter 5.2. Continue working on errors" />
     <MESSAGE value="Chapter 5.3. Add custom error type" />
     <MESSAGE value="Chapter 5.4. Add tests and convert custom errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chapter 5.4. Add tests and convert custom errors" />
+    <MESSAGE value="Chapter 5.5. Change get_course_details to handle error. Add test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chapter 5.5. Change get_course_details to handle error. Add test" />
   </component>
 </project>
