@@ -20,7 +20,15 @@ pub async fn get_courses_for_tutor_db(
             course_id: course_row.course_id,
             tutor_id: course_row.tutor_id,
             course_name: course_row.course_name.clone(),
+            course_description: None,
+            course_format: None,
+            course_structure: None,
+            course_duration: None,
+            course_price: None,
+            course_language: None,
+            course_level: None,
             posted_time: Some(chrono::NaiveDateTime::from(course_row.posted_time.unwrap())),
+            
         })
         .collect();
     match courses.len() {
@@ -51,7 +59,15 @@ pub async fn get_course_details_db(
             course_id: course_row.course_id,
             tutor_id: course_row.tutor_id,
             course_name: course_row.course_name.clone(),
+            course_description: None,
+            course_format: None,
+            course_structure: None,
+            course_duration: None,
+            course_price: None,
+            course_language: None,
+            course_level: None,
             posted_time: Some(chrono::NaiveDateTime::from(course_row.posted_time.unwrap())),
+            
         })
     } else {
         Err(EzyTutorError::NotFound("Course id not found".into()))
@@ -76,6 +92,14 @@ pub async fn post_new_course_db(
         course_id: course_row.course_id,
         tutor_id: course_row.tutor_id,
         course_name: course_row.course_name.clone(),
+        course_description: None,
+        course_format: None,
+        course_structure: None,
+        course_duration: None,
+        course_price: None,
+        course_language: None,
+        course_level: None,
         posted_time: Some(chrono::NaiveDateTime::from(course_row.posted_time.unwrap())),
+        
     })
 }

@@ -14,25 +14,11 @@
     <cargoProject FILE="$PROJECT_DIR$/rust_servers/ezytutors/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Chapter 5.6. Change post_new_course_db to handle error. Add test">
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/bin/iter5.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/dbaccess/course.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/dbaccess/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/dbaccess/tutor.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/dbscripts/course.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/dbscripts/tutor-course.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/errors.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/handlers/course.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/handlers/general.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/handlers/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/handlers/tutor.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/models/course.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/models/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/models/tutor.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/routes.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/state.rs" afterDir="false" />
+    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Chapter 6.1. Revamp project structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/main.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/dbaccess/course.rs" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/dbaccess/course.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/dbscripts/course.sql" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/dbscripts/course.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/models/course.rs" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/models/course.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +75,7 @@
     &quot;Cargo.Run guess-game.executor&quot;: &quot;Run&quot;,
     &quot;Cargo.Run hello.executor&quot;: &quot;Run&quot;,
     &quot;Cargo.Run iter3.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run iter5.executor&quot;: &quot;Run&quot;,
     &quot;Cargo.Run mandelbrot.executor&quot;: &quot;Run&quot;,
     &quot;Cargo.Run quickreplace.executor&quot;: &quot;Run&quot;,
     &quot;Cargo.Run.executor&quot;: &quot;Run&quot;,
@@ -130,7 +117,7 @@
   <component name="RsExternalLinterProjectSettings">
     <option name="runOnTheFly" value="true" />
   </component>
-  <component name="RunManager" selected="Cargo.Run iter3">
+  <component name="RunManager" selected="Cargo.Run iter5">
     <configuration name="Run car_shoot" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="run --package car_shoot --bin car_shoot" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$/car_shoot" />
@@ -182,9 +169,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run mandelbrot" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package mandelbrot --bin mandelbrot" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/mandelbrot" />
+    <configuration name="Run iter5" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package tutor-db --bin iter5" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/rust_servers/ezytutors" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -238,16 +225,16 @@
       <item itemvalue="Cargo.Run car_shoot" />
       <item itemvalue="Cargo.Run guess-game" />
       <item itemvalue="Cargo.Run iter3" />
-      <item itemvalue="Cargo.Run mandelbrot" />
+      <item itemvalue="Cargo.Run iter5" />
       <item itemvalue="Cargo.Run quickreplace" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Run iter5" />
         <item itemvalue="Cargo.Run iter3" />
         <item itemvalue="Cargo.Run car_shoot" />
         <item itemvalue="Cargo.Run guess-game" />
         <item itemvalue="Cargo.Run quickreplace" />
-        <item itemvalue="Cargo.Run mandelbrot" />
       </list>
     </recent_temporary>
   </component>
@@ -288,7 +275,9 @@
       <workItem from="1741201587934" duration="1771000" />
       <workItem from="1741203404839" duration="695000" />
       <workItem from="1741204125672" duration="2356000" />
-      <workItem from="1741285079239" duration="1989000" />
+      <workItem from="1741285079239" duration="3657000" />
+      <workItem from="1741703462662" duration="227000" />
+      <workItem from="1741703703674" duration="1819000" />
     </task>
     <task id="LOCAL-00001" summary="Add three projects">
       <option name="closed" value="true" />
@@ -498,7 +487,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741206447772</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Chapter 6.1. Revamp project structure">
+      <option name="closed" value="true" />
+      <created>1741287292974</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1741287292974</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -546,6 +543,7 @@
     <MESSAGE value="Chapter 5.4. Add tests and convert custom errors" />
     <MESSAGE value="Chapter 5.5. Change get_course_details to handle error. Add test" />
     <MESSAGE value="Chapter 5.6. Change post_new_course_db to handle error. Add test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chapter 5.6. Change post_new_course_db to handle error. Add test" />
+    <MESSAGE value="Chapter 6.1. Revamp project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chapter 6.1. Revamp project structure" />
   </component>
 </project>
