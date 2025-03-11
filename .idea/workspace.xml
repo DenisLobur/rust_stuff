@@ -14,11 +14,12 @@
     <cargoProject FILE="$PROJECT_DIR$/rust_servers/ezytutors/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Chapter 6.1. Revamp project structure">
+    <list default="true" id="b683ceca-c2e4-4b80-bc0f-92978f79762e" name="Changes" comment="Chapter 6.2.1. Make changes to data structures">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/bin/iter5.rs" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/bin/iter5.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/dbaccess/course.rs" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/dbaccess/course.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/dbscripts/course.sql" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/dbscripts/course.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/models/course.rs" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/models/course.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/handlers/course.rs" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/handlers/course.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/routes.rs" beforeDir="false" afterPath="$PROJECT_DIR$/rust_servers/ezytutors/tutor-db/src/iter5/routes.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +278,7 @@
       <workItem from="1741204125672" duration="2356000" />
       <workItem from="1741285079239" duration="3657000" />
       <workItem from="1741703462662" duration="227000" />
-      <workItem from="1741703703674" duration="1819000" />
+      <workItem from="1741703703674" duration="6907000" />
     </task>
     <task id="LOCAL-00001" summary="Add three projects">
       <option name="closed" value="true" />
@@ -495,7 +496,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741287292974</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Chapter 6.2.1. Make changes to data structures">
+      <option name="closed" value="true" />
+      <created>1741705569205</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1741705569205</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,7 +528,6 @@
       <path value="$PROJECT_DIR$/hello" />
       <path value="$PROJECT_DIR$/mandelbrot" />
     </ignored-roots>
-    <MESSAGE value="Add three projects" />
     <MESSAGE value="test" />
     <MESSAGE value="test 3" />
     <MESSAGE value="Adding copilot checks" />
@@ -544,6 +552,7 @@
     <MESSAGE value="Chapter 5.5. Change get_course_details to handle error. Add test" />
     <MESSAGE value="Chapter 5.6. Change post_new_course_db to handle error. Add test" />
     <MESSAGE value="Chapter 6.1. Revamp project structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chapter 6.1. Revamp project structure" />
+    <MESSAGE value="Chapter 6.2.1. Make changes to data structures" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chapter 6.2.1. Make changes to data structures" />
   </component>
 </project>
