@@ -1,10 +1,11 @@
-use crate::routes::{course_routes, general_routes};
+use crate::routes::{course_routes, general_routes, tutor_routes};
 use crate::state::AppState;
 use actix_web::{web, App, HttpServer};
 use dotenv::dotenv;
 use sqlx::PgPool;
 use std::sync::Mutex;
 use std::{env, io};
+use crate::errors::EzyTutorError;
 
 #[path = "../iter5/dbaccess/mod.rs"]
 mod dbaccess;
@@ -34,8 +35,13 @@ async fn main() -> io::Result<()> {
     let app = move || {
         App::new()
             .app_data(shared_data.clone())
+            .app_data(web::JsonConfig::default().error_handler(|_err, _req| {
+                EzyTutorError::InvalidInput(
+                    "Please provide valid Json input".to_string()).into()
+            }))
             .configure(general_routes)
             .configure(course_routes)
+            .configure(tutor_routes)
     };
     //Start HTTP server
     let host_port = env::var("HOST_PORT").expect("HOST:PORT address is not set in .env file");
